@@ -1,3 +1,17 @@
 /* 
     General Styles
 */
+footer{
+    background: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+.toast{
+    z-index: 10;
+}
+
+.toast-header{
+    border-bottom: unset;
+}
