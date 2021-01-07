@@ -62,9 +62,9 @@ export const AddEditContact = () => {
 	};
 
 	return (
-		<div className="container">
+		<div className="container my-5">
 			<h1>{typeof theid !== "undefined" ? "Edit" : "Add new"} Contact</h1>
-			<form onSubmit={e => e.preventDefault()}>
+			<form onSubmit={e => e.preventDefault()} className="my-5">
 				<div className="mb-3">
 					<label htmlFor="fullName" className="form-label">
 						Full Name
@@ -121,6 +121,7 @@ export const AddEditContact = () => {
 					Submit
 				</button>
 			</form>
+			<Link to={`/`}>Back to Contact List</Link>
 		</div>
 	);
 };
